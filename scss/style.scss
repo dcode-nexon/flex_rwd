@@ -5,11 +5,37 @@ main {
   flex-flow: row wrap;
   text-align: center;
 
+  //main요소 안쪽의 직계자식의 공통 스타일 지정가능
   > * {
     padding: 10px;
+    //부모에 flex적용시 margin겹침 현상 해결
     margin: 10px;
     flex: 1 100%;
     border-radius: 10px;
     background: gray;
   }
+
+  header {
+    background: lightblue;
+    height: 120px;
+  }
+
+  section {
+    background: lightgreen;
+    height: 300px;
+  }
+
+  footer {
+    background: lightcoral;
+    height: 80px;
+  }
+
+  aside:nth-of-type(1) {
+    background: orange;
+  }
+  aside:nth-of-type(2) {
+    background: orangered;
+  }
+
+  
 }
