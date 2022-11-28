@@ -1,0 +1,15 @@
+@import 'reset';
+
+main {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+
+  > * {
+    padding: 10px;
+    margin: 10px;
+    flex: 1 100%;
+    border-radius: 10px;
+    background: gray;
+  }
+}
