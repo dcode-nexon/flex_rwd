@@ -47,4 +47,19 @@ main footer {
   order: 4;
 }
 
+@media screen and (max-width: 799px) {
+  main section {
+    flex: 1 100%;
+    order: 1;
+  }
+  main aside {
+    order: 2;
+  }
+}
+@media screen and (max-width: 599px) {
+  main aside {
+    flex: 1 100% !important;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
