@@ -19,6 +19,7 @@ main > * {
 }
 main > * h1 {
   font-size: 30px;
+  color: white;
 }
 main header {
   background: lightblue;
@@ -39,6 +40,11 @@ main footer {
   height: 80px;
 }
 
+@media screen and (min-width: 600px) {
+  main aside {
+    flex: 1;
+  }
+}
 @media screen and (min-width: 800px) {
   main section {
     flex: 3;

@@ -17,6 +17,7 @@ main {
     
     h1 {
       font-size: 30px;
+      color: white;
     }
   }
 
@@ -45,12 +46,26 @@ main {
   
 }
 
+//최소넓이값 600px이상에서부터는 다음의 내용을 덮어씀
+@media screen and (min-width: 600px){
+  main {
+    //타블렛 구간에서부터는 동일한 폭 비율1은 그대로 유지하고 넓이값만 100%제거해 좌우로 배치되게 처리
+    aside {
+      flex: 1;
+    }
+  }
+}
+
+//최소넓이값 800px이상에서부터는 다음의 내용을 덮어씀
 @media screen and (min-width: 800px) {
   main {
     section {
+      //desktop버전에서는 100%를 지우고 비율을 aside대비 3배 크기로 설정
+      //그리고 순서는 가운데 오도록 2로 설정
       flex: 3;
       order: 2;
     }
+    //나머지 요소도 순서 지정
     aside:nth-of-type(1) {
       order: 1;
     }
@@ -62,3 +77,5 @@ main {
     }
   }
 }
+
+
